@@ -39,16 +39,16 @@ Isolated is a 2D cooperative/multiplayer platformer game developed as a college 
 Here's a version that stays as close as possible to your original wording while improving the grammar:
 The main objective of the project was to build a multiplayer game using Unity. The development was progressive: we started with a cooperative version of the game, where players could play together on the same screen. Then we added a P2P multiplayer version, and finally we implemented a client-server multiplayer version (with an authoritative server).
 
-## 🎮 Guides
+## 🎮 Play
 
 This repository contains only the **cooperative** and **client-server** versions of the game, because I couldn't find the **P2P** version. The gameplay differs a bit between both versions, but if you read the instructions below you will be able to play the game without any problem.
 
 <div align="center">
 
-| ⭐ Mode | 🎯 Objective | 🎮 How to Play | ⬇️ Download |
+| ⭐ Mode | 🎯 Objective | 🎮 Instructions | ⬇️ Download |
 |------|-----------|-------------|----------|
-| Cooperative | Collaborate to reach the end of the level. Then fight each other. | [Instructions](./COOPERATIVE.md) | [Release](https://github.com/iivvaannxx/releases/tag/cooperative) |
-| Multiplayer | Survive and kill them all! | [Instructions](./MULTIPLAYER.md) | [Release](https://github.com/iivvaannxx/releases/tag/multiplayer) |
+| Cooperative | Collaborate to complete the level. Then fight each other. | [Read](./COOPERATIVE.md) | [Release](https://github.com/iivvaannxx/isolated/releases/tag/cooperative) |
+| Multiplayer | Survive and kill them all! | [Read](./MULTIPLAYER.md) | [Release](https://github.com/iivvaannxx/isolated/releases/tag/multiplayer) |
 
 </div>
 
