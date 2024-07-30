@@ -28,7 +28,7 @@ In the cooperative version, players must play on the same screen. The game is de
 
 ## 🛠️ How to Play
 
-Go ahead and download the game from the [releases page](https://github.com/iivvaannxx/isolated/releases/tag/1.0.0) for your operating system. Then follow the instructions below.
+Go ahead and download the game from the [releases page](https://github.com/iivvaannxx/isolated/releases/tag/cooperative) for your operating system. Then follow the instructions below.
 
 ### Windows
 

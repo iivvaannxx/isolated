@@ -10,7 +10,7 @@
 <p></p>
 
 <div align="center">
-  📥 <a href="https://github.com/iivvaannxx/isolated/releases/tag/1.0.0">Download</a>
+  📥 <a href="https://github.com/iivvaannxx/isolated/releases">Download</a>
   <span>&nbsp;·&nbsp;</span>
   🔑 <a href="https://github.com/iivvaannxx/isolated?tab=License-1-ov-file">License</a>
 
@@ -45,10 +45,10 @@ This repository contains only the **cooperative** and **client-server** versions
 
 <div align="center">
 
-| Mode | Objective | How to Play |
-|------|-----------|-------------|
-| Cooperative | Collaborate to reach the end of the level. Then fight each other. | [Instructions](./COOPERATIVE.md) |
-| Multiplayer | Survive and kill them all! | [Instructions](./MULTIPLAYER.md) |
+| ⭐ Mode | 🎯 Objective | 🎮 How to Play | ⬇️ Download |
+|------|-----------|-------------|----------|
+| Cooperative | Collaborate to reach the end of the level. Then fight each other. | [Instructions](./COOPERATIVE.md) | [Release](https://github.com/iivvaannxx/releases/tag/cooperative) |
+| Multiplayer | Survive and kill them all! | [Instructions](./MULTIPLAYER.md) | [Release](https://github.com/iivvaannxx/releases/tag/multiplayer) |
 
 </div>
 
