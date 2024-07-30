@@ -39,20 +39,19 @@ Isolated is a 2D cooperative/multiplayer platformer game developed as a college 
 Here's a version that stays as close as possible to your original wording while improving the grammar:
 The main objective of the project was to build a multiplayer game using Unity. The development was progressive: we started with a cooperative version of the game, where players could play together on the same screen. Then we added a P2P multiplayer version, and finally we implemented a client-server multiplayer version (with an authoritative server).
 
+## 🎮 Guides
+
 This repository contains only the **cooperative** and **client-server** versions of the game, because I couldn't find the **P2P** version. The gameplay differs a bit between both versions, but if you read the instructions below you will be able to play the game without any problem.
+
+<div align="center">
+
+| Mode | Objective | How to Play |
+|------|-----------|-------------|
+| Cooperative | Collaborate to reach the end of the level. Then fight each other. | [Instructions](./COOPERATIVE.md) |
+| Multiplayer | Survive and kill them all! | [Instructions](./MULTIPLAYER.md) |
+
+</div>
 
 ## 📜 License
 
-Isolated © 2022 by Ignasi Ezpeleta & Ivan Porto Wigner is licensed under CC BY-NC-ND 4.0. To view the details of this license, visit this link.
-
-## 📷 Screenshots
-
-![Split Camera](./.github/assets/split-camera.png)
-
-![Portal](./.github/assets/portal.png)
-
-![Multiplayer](./.github/assets/multiplayer.png)
-
-![Clients](./.github/assets/clients.png)
-
-![Server](./.github/assets/server.png)
+Isolated © 2022 by Ignasi Ezpeleta & Ivan Porto Wigner is licensed under CC BY-NC-ND 4.0. To view the details of this license, visit [this link](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en).
