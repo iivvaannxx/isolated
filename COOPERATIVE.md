@@ -3,7 +3,28 @@
   <p></p>
 </div>
 
+<div align="center">
+  <img src="./.github/assets/preview.png" alt="Preview of the game">
+</div>
+
+<p></p>
+
 In the cooperative version, players must play on the same screen. The game is designed to be played with two players, it is not possible to play alone. The goal of this version is to reach the end of the level by working together, as they will need to help each other to overcome obstacles. At the end of the level, players will need to confront each other in a final battle to determine the winner.
+
+## 📖 Table of Contents
+
+- [🛠️ How to Play](#-how-to-play)
+  - [Windows](#windows)
+  - [Linux](#linux)
+- [⚙️ Setup](#️-setup)
+- [🎥 Cameras](#-cameras)
+- [🎮 Controls](#-controls)
+  - [Gamepad Controls](#gamepad-controls)
+  - [Keyboard Controls](#keyboard-controls)
+  - [Control Assignment](#control-assignment)
+- [🤖 Players (Important for Gameplay)](#-players)
+- [🤯 Known Bugs](#-known-bugs)
+- [📷 Screenshots](#-screenshots)
 
 ## 🛠️ How to Play
 
@@ -24,46 +45,101 @@ Go ahead and download the game from the [releases page](https://github.com/iivva
 chmod +x Isolated
 ./Isolated
 ```
-After doing this you will be presented with the setup scene I mentioned before. Configure your input device and start playing!
+## ⚙️ Setup
 
-> [!WARNING]
-> There's a known bug where the game allows you to control both players with the same gamepad. If you select a gamepad as the input device for both players and it's the same, you will be moving both players at the same time, and the game will be unplayable. To avoid this, make sure to use different gamepads for each player. If you use a keyboard for both, don't worry, the controls will be different for each player (explained below).
+Upon starting the game, you'll be greeted with a "configuration" scene, where you can set up which input device you want to use. The game can be played with both a keyboard and a gamepad.
+
+![Input Configuration](./.github/assets/device.png)
+
+Just do as it says; If you want to use the keyboard, press any key and it will be automatically detected. If you want to use a gamepad, press any button on the gamepad and it will also be automatically detected. When all the players have configured their input devices, a 5-second countdown will start, and then the game will begin.
+
+## 🎥 Cameras
+
+One of the requirements of the cooperative version was to have multiple cameras and the ability to switch between them. The different modes available are:
+
+- **Follow Player 1**: The camera follows player 1, and the player 2 may be off-screen.
+- **Follow Player 2**: The camera follows player 2, and the player 1 may be off-screen.
+- **Fixed Camera**: The camera is fixed in a position, and does not move.
+- **Adaptive Camera** (Default): The camera adapts to the position of both players, ensuring they are both on-screen.
+- **Split Camera**: The screen is divided in half, with each player having their own camera.
+
+You can switch between these modes depending on the controls you have selected, as explained below.
+
+> [!TIP]
+> When using the split camera, you have the ability to toggle between horizontal and vertical split. The controls for this are explained below.
 
 ## 🎮 Controls
 
-The controls depend on the input device you choose and whether you are player 1 or player 2. Because you can play with either a keyboard or a gamepad, there are three possible configurations.
+The game supports both gamepad and keyboard controls. Here's a breakdown of the controls for each:
 
-### Case 1: Gamepad for both players
+### Gamepad Controls
 
-Each gamepad works the same, assuming they are different (read the warning above). The controls are as follows:
+| Action | Control |
+|--------|---------|
+| Move (Left / Right) | Left Stick |
+| Jump | South Button (e.g., `X` on PlayStation) |
+| Crouch | East Button (e.g., `O` on PlayStation) |
+| Shoot | Right Trigger (e.g., `R2` on PlayStation) |
+| Reload | West Button (e.g., `Square` on PlayStation) |
+| Aim (Up / Down) | Right Stick |
+| Switch To Previous Camera | Left Shoulder (e.g., `L1` on PlayStation) |
+| Switch To Next Camera | Right Shoulder (e.g., `R1` on PlayStation) |
+| Toggle Split Camera | Press Right Stick (e.g., `R3` on Playstation) |
 
-<div align="center">
+### Keyboard Controls
 
-| Move (Left / Right) | Jump | Crouch | Shoot | Reload | Aim (Up / Down) |
-|---------------------|------|--------|-------|--------|-----------------|
-| Left Stick | South Button | East Button | Right Trigger | West Button | Right Stick |
+| Action | Player 1 | Player 2 (with Numpad) | Player 2 (without Numpad) |
+|--------|----------|------------------------|---------------------------|
+| Move Left | `KeyA` | `Numpad4` | `KeyJ` |
+| Move Right | `KeyD` | `Numpad6` | `KeyL` |
+| Jump | `KeyW` | `Numpad8` | `KeyI` |
+| Crouch | `KeyS` | `Numpad5` | `KeyK` |
+| Shoot | `KeyQ` | `Numpad7` | `KeyO` |
+| Reload | `KeyE` | `Numpad9` | `KeyU` |
+| Aim Up | `KeyR` | `Up Arrow` | `KeyY` |
+| Aim Down | `KeyF` | `Down Arrow` | `KeyH` |
+| Switch To Previous Camera | `Num8` | `Num8` | `Num8` |
+| Switch To Next Camera | `Num9` | `Num9` | `Num9` |
+| Toggle Split Camera | `Tab` | `Tab` | `Tab` |
 
-</div>
+<details>
+  <p></p>
+  <summary>If this table is a bit confusing to you, look at this image, sometimes an image is worth a thousand words:</summary>
 
-> [!NOTE]
-> For example, for a typical PlayStation controller, jump would be `X`, crouch would be `O`, shoot would be `R2`, and reload would be `Square`.
+  ![Controls](./.github/assets/controls.png)
 
-### Case 2: Keyboard for both players
+</details>
 
-![Controls](./.github/assets/controls.png)
+### Control Assignment
 
-This may look a bit confusing, but it's actually quite simple. The first player will always use the **blue** controls, and the second player will use the **green** or **purple** controls depending if the keyboard has a numpad or not.
+- If both players choose gamepads, each player uses their respective gamepad controls.
+- If both players choose keyboard, Player 1 uses the first set of keyboard controls, and Player 2 uses either the numpad or alternative set, depending on your keyboard.
+- If one player chooses gamepad and the other keyboard, the gamepad player uses gamepad controls, and the keyboard player uses Player 1's keyboard controls.
 
-<div align="center">
+## 🤖 Players
 
-| Numpad | Player | Move (Left / Right) | Jump | Crouch | Shoot | Reload | Aim (Up / Down) |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| \*  | P1  | `A` / `D` Keys | `W` Key | `S` Key | `Q` Key | `E` Key | `R` / `F` Keys |
-| ✅   | P2  | `4` / `6` Keys | `8` Key | `5` Key | `7` Key | `9` Key | `Up` / `Down` Keys |
-| ❌   | P2  | `J` / `L` Keys | `I` Key | `K` Key | `O` Key | `U` Key | `Y` / `H` Keys |
+The players have different stats that affect the gameplay. Here's a breakdown of each player:
 
-</div>
+| Player | Jump Height | Accuracy | Fire Rate | Crouch Accuracy | Magazine Capacity | Damage |
+|--------|-------------|----------|-----------|-----------------|-------------------|--------|
+| Player 1 | 90 | 0.9 | 900 | 1 | 50 | 8 |
+| Player 2 | 100 | 0.8 | 1100 | 0.9 | 40 | 5 |
 
-### Case 3 (Mixed): Gamepad for one player and keyboard for the other
+In short, in terms of battle stats, Player 1 has a slower fire rate but a bit more damage and a higher precision. Player 2 has a faster fire rate but less damage and precision. Regarding movement, Player 1 jumps a bit lower than Player 2, this is **important**, as there are some obstacles that only Player 2 can jump over.
 
-This case is very simple, one player will use the controls listed in the [first case](#case-1-gamepad-for-both-players), and the other player will use **always** the **first set of controls** listed in the [second case](#case-2-keyboard-for-both-players) (blue), regardless of the keyboard configuration.
+> [!TIP]
+> You can jump on top of the other player to reach higher places.
+
+
+## 🤯 Known Bugs
+
+- When activating the moving platforms, if there's a player currently standing on an activator, and the other player enters the other activator, if the former gets off the activator, the platform will stop moving. You need to make the latter player get off the activator and get back on it to make the platform move again.
+
+- When selecting the input device, if you use the same gamepad for both players, the game will become unplayable, because you'll be controlling both players at the same time.
+
+## 📷 Screenshots
+
+![Split Camera](./.github/assets/split-camera.png)
+
+![Portal](./.github/assets/portal.png)
+

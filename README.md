@@ -41,26 +41,6 @@ The main objective of the project was to build a multiplayer game using Unity. T
 
 This repository contains only the **cooperative** and **client-server** versions of the game, because I couldn't find the **P2P** version. The gameplay differs a bit between both versions, but if you read the instructions below you will be able to play the game without any problem.
 
-## ⚙️ Setup
-
-Upon starting any of the two versions of the game, you'll be greeted with a "configuration" scene, where you can set up which input device you want to use. The game can be played with both a keyboard and a gamepad.
-
-You will be presented with a modal like this (for all players):
-
-![Input Configuration](./.github/assets/device.png)
-
-Just do as it says; If you want to use the keyboard, press any key and it will be automatically detected. If you want to use a gamepad, press any button on the gamepad and it will also be automatically detected. When all the players have configured their input devices, a 5-second countdown will start, and then the game will begin.
-
-Let's see how to play each version!
-
-
-
-## 👥 Multiplayer
-
-
-## 🤯 Known Bugs
-
-
 ## 📜 License
 
 Isolated © 2022 by Ignasi Ezpeleta & Ivan Porto Wigner is licensed under CC BY-NC-ND 4.0. To view the details of this license, visit this link.
