@@ -14,7 +14,7 @@ In the multiplayer version of the game, players can connect to a server and play
 </p>
 
 > [!IMPORTANT]
-> The maximum allowed players in a single server is 4 players. If you try to connect to a server which already has 4 players inside, it won't let you in. You can start as many servers as you want, but each server can only have 4 players.
+> The maximum number of allowed players in a single server is 4 players. If you try to connect to a server that already has 4 players inside, it won't let you in. You can start as many servers as you want, but each server can only have 4 players.
 
 > [!NOTE]
 > You can try the entire game by yourself. You only need to follow the instructions below and open as many clients as you want to connect. The game runs in "Windowed" mode by default to facilitate this.
@@ -35,9 +35,9 @@ In the multiplayer version of the game, players can connect to a server and play
 
 ## 🛠️ How to Play
 
-Go ahead and download the game from the [releases page](https://github.com/iivvaannxx/isolated/releases/tag/multiplayer) for your operating system. You'll see that inside the zip files, there are 2 different executables, one named `Client` and the other named `Server`. In order to play the game and for the clients to be able to connect, you need to run the server first.
+Download the game from the [releases page](https://github.com/iivvaannxx/isolated/releases/tag/multiplayer) for your operating system. You'll see that inside the zip files, there are 2 different executables, one named `Client` and the other named `Server`. To play the game and for the clients to be able to connect, you need to run the server first.
 
-The server will automatically find an available port and start listening for connections. You'll be able to see the credentials all the time, which you'll need to provide to the clients in order to connect.
+The server will automatically find an available port and start listening for connections. You'll be able to see the credentials all the time, which you'll need to provide to the clients to connect.
 
 > [!NOTE]
 > While is it possible to run a server and allow client connections from a different network (someone who is not connected to the same router), this guide will only cover local connections. If you know what you're doing, setting up a server to play with someone who isn't in your network is not complicated, but it involves opening ports on the router, figuring out your public IP, and tweaking your Firewall, things which are out of the scope of this guide.
@@ -45,7 +45,7 @@ The server will automatically find an available port and start listening for con
 ### Windows
 
 1. Download the `IsolatedMultiplayer_Windows.zip` file.
-2. Extract the contents of the zip file on your preferred location.
+2. Extract the contents of the zip file to your preferred location.
 3. Navigate to the `Server` folder and run the `Isolated` executable inside it (this is all what's needed for the server).
 4. Navigate to the `Client` folder and run the `Isolated` executable inside it.
 5. Follow the instructions under the [Setup](#️-setup) section below and you'll be ready to play.
@@ -53,7 +53,7 @@ The server will automatically find an available port and start listening for con
 
 ### Linux
 1. Download the `IsolatedMultiplayer_Linux.zip` file from the releases page.
-2. Extract the contents of the zip file on your preferred location.
+2. Extract the contents of the zip file to your preferred location.
 3. Navigate to the `Server` folder and run the `Isolated` executable via the following commands:
 
 ```bash
@@ -82,7 +82,7 @@ Upon starting the game, you'll be greeted with a "configuration" scene, where yo
 
 ![Input Configuration](./.github/assets/device.png)
 
-Just do as it says; If you want to use the keyboard, press any key and it will be automatically detected. If you want to use a gamepad, press any button on the gamepad and it will also be automatically detected. When all the players have configured their input devices, a 5-second countdown will start, and then the game will begin.
+Just do as it says; If you want to use the keyboard, press any key to automatically detect it. If you want to use a gamepad, press any button on the gamepad and it will also be automatically detected. When all the players have configured their input devices, a 5-second countdown will start, and then the game will begin.
 
 After that, you'll be prompted to enter the server credentials. You'll need to provide the IP address and the port of the server you want to connect to. The default values are the credentials used by the first launched server, you shouldn't need to change them if you're connecting to that server, but if they are different, just change them accordingly.
 
@@ -90,7 +90,7 @@ After that, you'll be prompted to enter the server credentials. You'll need to p
 
 ## 🔄 Server Synchronization
 
-The client-server architecture uses an authoritative server, which means that the server is the one that has the final say on what happens in the game. The clients communicate all their actions to him, and he decides what to do with them. This is done to ensure that all the clients are in sync with each other, and that there are no discrepancies between them.
+The client-server architecture uses an authoritative server, which means that the server is the one that has the final say on what happens in the game. The clients communicate all their actions to him, and he decides what to do with them. This is done to ensure that all the clients are in sync with each other and that there are no discrepancies between them.
 
 There's only one "gotcha". I don't recall why we did such a thing, but I'm pretty sure it was for a good reason. The "synchronization" is not perfect, and it's not constant. It happens around every 2 seconds (slow). This means that in the time between those 2 seconds, there's a possibility that the clients will be out of sync (different state). 
 
@@ -146,13 +146,13 @@ So, the players can be described as follows:
 - **Player 1**: The most balanced character, with average stats in all categories.
 - **Player 2**: A bit faster than Player 1, but with less accuracy and damage, but a higher fire rate.
 - **Player 3**: The slowest character, but with a really high damage and the slowest fire rate.
-- **Player 4**: This players wields a bazooka, that's why it has such a high damage and a small magazine capacity. It's also the fastest character, **but it has a handicap**, it needs to be stationary to shoot, you can't shoot if you're moving, unlike the other players which they can.
+- **Player 4**: This player wields a bazooka, that's why it has such high damage and a small magazine capacity. It's also the fastest character, **but it has a handicap**, it needs to be stationary to shoot; you can't shoot if you're moving, unlike the other players.
 
 ## 🤯 Known Bugs
 
 - Read the [Server Synchronization](#-server-synchronization) section above if you experience any desync between the clients. You may consider it a bug, but it has a reason.
 
-- The bullets that are shot by the players are not synced with new clients, this is a missing feature we didn't have time to implement. If you're a new client connecting to a server where the players are already shooting, you won't see the already shot bullets, but you'll see the new ones.
+- The bullets that are shot by the players are not synced with new clients, this is a missing feature we didn't have time to implement. If you're a new client connecting to a server where the players are already shooting, you won't see the already-shot bullets, but you'll see the new ones.
 
 ## 📷 Screenshots
 
