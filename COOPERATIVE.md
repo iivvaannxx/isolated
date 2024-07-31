@@ -9,7 +9,7 @@
 
 <p></p>
 
-In the cooperative version, players must play on the same screen. The game is designed to be played with two players, it is not possible to play alone. The goal of this version is to reach the end of the level by working together, as they will need to help each other to overcome obstacles. At the end of the level, players will need to confront each other in a final battle to determine the winner.
+In the cooperative version, players must play on the same screen. The game is designed to be played with two players, it is not possible to play alone (unless you control both characters). The goal of this version is to reach the end of the level by working together, as they will need to help each other to overcome obstacles. At the end of the level, players will need to confront each other in a final battle to determine the winner.
 
 ## 📖 Table of Contents
 
@@ -63,10 +63,10 @@ One of the requirements of the cooperative version was to have multiple cameras 
 - **Adaptive Camera** (Default): The camera adapts to the position of both players, ensuring they are both on-screen.
 - **Split Camera**: The screen is divided in half, with each player having their own camera.
 
-You can switch between these modes depending on the controls you have selected, as explained below.
+The controls to switch between cameras are explained in the [Controls](#-controls) section.
 
 > [!TIP]
-> When using the split camera, you have the ability to toggle between horizontal and vertical split. The controls for this are explained below.
+> When using the split camera, you have the ability to toggle between horizontal and vertical split.
 
 ## 🎮 Controls
 
