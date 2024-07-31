@@ -10,7 +10,7 @@
 
 <p></p>
 <p>
-In the multiplayer version of the game, players can connect to a server and play against each other. The players don't necessarily need to use the same computer, although its possible. In this version there's no cooperation, players must fight each other to determine the winner.
+In the multiplayer version of the game, players can connect to a server and play against each other. The players don't necessarily need to use the same computer, although its possible. In this version there's no co-op, players must fight each other to determine the winner.
 </p>
 
 > [!IMPORTANT]
@@ -21,7 +21,7 @@ In the multiplayer version of the game, players can connect to a server and play
 
 ## 📖 Table of Contents
 
-- [🛠️ How to Play](#-how-to-play)
+- [🛠️ How to Play](#️-how-to-play)
   - [Windows](#windows)
   - [Linux](#linux)
 - [⚙️ Setup](#️-setup)
@@ -94,7 +94,10 @@ The client-server architecture uses an authoritative server, which means that th
 
 There's only one "gotcha". I don't recall why we did such a thing, but I'm pretty sure it was for a good reason. The "synchronization" is not perfect, and it's not constant. It happens around every 2 seconds (slow). This means that in the time between those 2 seconds, there's a possibility that the clients will be out of sync (different state). 
 
-The players may go out of sync depending on the connection speed and how they interact with the environment and the physics, which even if they are designed to be deterministic, it's not perfect in these cases. This is not intended to be a professional game, while we tried to make it as good as possible, we didn't have the time to make it perfect (deadlines...). Hope you enjoy it anyway!
+The players may go out of sync depending on the connection speed and how they interact with the environment and the physics, which even if they are designed to be deterministic, they're not perfect in these cases. 
+
+> [!NOTE]
+> This is not intended to be a professional game, while we tried to make it as good as possible, we didn't have the time to make it perfect (deadlines...). Hope you enjoy it anyway!
 
 ## 🎮 Controls
 
