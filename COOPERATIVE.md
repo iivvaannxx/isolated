@@ -13,7 +13,7 @@ In the cooperative version, players must play on the same screen. The game is de
 
 ## 📖 Table of Contents
 
-- [🛠️ How to Play](#-how-to-play)
+- [🛠️ How to Play](#️-how-to-play)
   - [Windows](#windows)
   - [Linux](#linux)
 - [⚙️ Setup](#️-setup)
